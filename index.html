@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-     scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" media= "(max-width:800px)" href="main-small.css">
+        <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
+        <title> Good Luck </title>
+        
+    </head>
+    
+    <body>
+        
+        <div class = "header">
+            <div class = "nav">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href = "Images/Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a href = "#footer">Contact Me</a></li>
+                </ul>                
+            </div>
+        </div>
+        <div class = "header-icon">
+            <p id = "menu">Menu</p>
+        </div>
+        <div class = "header-2">
+            <div class = "nav-small">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href = "Images/Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a href = "#footer">Contact Me</a></li>
+                </ul>        
+            </div>
+        </div>
+        
+<!--------------------------------------------------->
+        
+        <div class = "page" id = "landing-page">
+            <div class = "landing-title">
+                <p class = "small-text"> Hi, I'm </p>
+                <p id = "name"> Mehtab Chithiwala </p>
+                <p class = "small-text"> Software Developer, Atlanta </p>
+            </div>
+            <div id = "anchor-about" class = "anchor">
+            <a id = "about"></a>
+            </div>
+        </div> 
+        
+<!--------------------------------------------------->
+        
+        <div class = "page" id = "about-page">
+            <p class = "title"> About Me </p>
+            <div id = "typer-box"></div>
+            
+            <div id = "pic"><img id = "mehtab" src = "Images/Me.jpg"></div>
+            
+            <div id = "anchor-project" class = "anchor">
+                <a id = "portfolio"></a>
+            </div>
+        </div>
+        
+<!--------------------------------------------------->       
+        
+        <div class = "page" id = "project-page">
+            <p class = "title"> Portfolio </p>
+            
+            <div class = "project-box">
+                <div class = "box" id = "box-2">
+                    <div class = "box-name">Maze-Rat Game</div>
+                </div>
+                <div class = "box" id = "box-3">
+                    <div class = "box-name">Mchithiwala.co.nf</div>
+                </div>
+                <div class = "box" id = "box-4">
+                    <div class = "box-name">Round Robin Scheduler</div>
+                </div>
+                <div class = "box" id = "box-5">
+                    <div class = "box-name">Currency Converter</div>
+                </div>
+             
+                <div class = "project-full" id = "cont-2">
+                    <h1><span>R</span>at-<span>M</span>aze <span>G</span>ame</h1>
+                    <p>A puzzle/game made in Java to compete with other developers. The "rat" communicates with other players' mazes over the server using TCP/IP and solves the randomly generated maze. The "rat" uses the Breath First Search algorithm to solve the maze in optimal time.</p>
+                </div>
+                <div class = "project-full" id = "cont-3">
+                    <h1><span>M</span>chithiwala.co.nf</h1>
+                    <p>This website was built from scratch in HTML, CSS, Javascript, and jQuery with minimal use of external plugins in order to learn the fundamentals of web development. The website is also fully responsive.</p>
+                </div>
+                <div class = "project-full" id = "cont-4">
+                    <h1><span>R</span>ound <span>R</span>obin <span>S</span>cheduler</h1>
+                    <p>A scheduler made in Java which creates a schedule for the teams based on the Round-Robin algorithm. The schedule can take any number of teams and be limited by date. Also includes a backend database system to store scores/results.</p>
+                </div>
+                <div class = "project-full" id = "cont-5">
+                    <h1> <span>C</span>urrency <span>C</span>onverter</h1>
+                    <p>A realtime currency converter built in Java. It gets the latest currency rates via REST/JSON and parses them using GSON. Has options for displaying current rates and converting to different currencies. Currently supports over 15 currencies.</p>
+                </div>
+            </div>
+            
+            <div id = "anchor-footer" class = "anchor">
+                <a id = "footer"></a>
+            </div>
+        </div>
+        
+<!--------------------------------------------------->
+        
+        <!--<div class = "footer">
+            <p id = "copyright">&#169 Mehtab Chithiwala</p>
+            </div> -->
+        
+        <script src = "jquery.js"></script>
+        <script src = "typer.js"></script>
+        <script src = "backstretch.js"></script>
+        <script src = "index.js"></script>
+    </body>
+    
+</html>
