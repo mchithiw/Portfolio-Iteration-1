@@ -1,0 +1,17 @@
+.landing-title{
+    font-size: 2em;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 85%;
+    width: 90%;
+    font-family: "Architects Daughter";
+}
+
+.small-text{
+    font-size: 1em;
+}
+
+#name{
+    font-size: 2em;
+}
