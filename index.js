@@ -3,7 +3,7 @@ $(function() {
     $("#box-2").backstretch("Images/maze.gif");
     $("#box-3").backstretch("Images/fingers.jpg");
     $("#box-4").backstretch("Images/robin.jpg");
-    $("#landing-page").backstretch("Images/ink-red.jpg");
+    $("#landing-page").backstretch("Images/fingers.jpg");
     //$("#pic").backstretch("Images/Me.jpg");
 });
 
