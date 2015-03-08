@@ -6,115 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" media= "(max-width:800px)" href="main-small.css">
-        <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         
-        <title> Mehtab Chithiwala </title>
+        <title> Mehtab.me </title>
         
     </head>
     
     <body>
-        
-        <div class = "header">
-            <div class = "nav">
+
+        <div class="header">
+            <h1 class="name">Mehtab Chithiwala</h1>
+            <nav class = "navbar">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href = "Images/Resume.pdf" target = "_blank">Resume</a></li>
-                    <li><a href = "#footer">Contact Me</a></li>
+                    <li><a id="about-button" href="#about">About Me</a></li>
+                    <li><a id="portfolio-button" href="#portfolio">Portfolio</a></li>
+                    <li><a href = "Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a id="contact-button" href = "#footer">Contact Me</a></li>
                 </ul>                
-            </div>
-        </div>
-        <div class = "header-icon">
-            <p id = "menu">Menu</p>
-        </div>
-        <div class = "header-2">
-            <div class = "nav-small">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href = "Images/Resume.pdf" target = "_blank">Resume</a></li>
-                    <li><a href = "#footer">Contact Me</a></li>
-                </ul>        
-            </div>
+            </nav>
         </div>
         
-<!--------------------------------------------------->
+        <div class="landing content">
+            <hl class="lh"></hl>
+            <p class="lp"></p>
+        </div>
         
-        <div class = "page" id = "landing-page">
-            <div class = "landing-title">
-                <p class = "small-text"> Hi, I'm </p>
-                <p id = "name"> Mehtab Chithiwala </p>
-                <p class = "small-text"> Software Developer, Atlanta </p>
-            </div>
-            <div id = "anchor-about" class = "anchor">
-            <a id = "about"></a>
-            </div>
-        </div> 
+        <div class="about content">
+            <p class="aboutp"> Hi, I'm Mehtab Chithiwala. I'm a 3rd year student at Southern Polytechnic State University. I love to spend my free time making interesting projects and hone my programming skills. I also enjoy volunteering around the community, watching all kinds of sports (<span id="falcons">Go Falcons!</span>), and spending time with my friends and family. If you would like to get in touch with me, feel free to to reach out via LinkedIn, Facebook, GitHub, or Email.
+            </p>
+             <p class="abouts"> <b>Current Courses</b>: Operating Systems, Programming Language and Concepts, Software Architechture and Design, Advanced Database Systems.              </p>
+            <p class="aboutpro"> <b>Current Project</b>: Quran Application.
+             </p>
+            <p class="aboutent"> <b>Current Entertainment</b>: Cricket World Cup!
+            </p>
+        </div>
         
-<!--------------------------------------------------->
-        
-        <div class = "page" id = "about-page">
-            <p class = "title"> About Me </p>
-            <div id = "typer-box"></div>
+        <div class="portfolio content">
             
-            <div id = "pic"><img id = "mehtab" src = "Images/Me.jpg"></div>
+            <ul>
+                <li><a href="#"><div class="project" id="ikra">
+                        <b>Ikra</b>
+                    </div></a>
+                </li>
+                <li><a href="#"><div class="project" id="currency">
+                        <b>Currencer</b>
+                    </div></a>
+                </li>
+                <li><a><div class="project" id="sockets">
+                        <b>Sockets</b>
+                    </div></a>
+                </li>
+                <li><div class="project" id="scheduler">
+                        <b>Scheduler</b>
+                        </div>
+                </li>
+                    
+                </ul> 
             
-            <div id = "anchor-project" class = "anchor">
-                <a id = "portfolio"></a>
-            </div>
         </div>
         
-<!--------------------------------------------------->       
-        
-        <div class = "page" id = "project-page">
-            <p class = "title"> Portfolio </p>
-            
-            <div class = "project-box">
-                <div class = "box" id = "box-2">
-                    <div class = "box-name">Maze-Rat Game</div>
-                </div>
-                <div class = "box" id = "box-3">
-                    <div class = "box-name">Mchithiwala.co.nf</div>
-                </div>
-                <div class = "box" id = "box-4">
-                    <div class = "box-name">Round Robin Scheduler</div>
-                </div>
-                <div class = "box" id = "box-5">
-                    <div class = "box-name">Currency Converter</div>
-                </div>
-             
-                <div class = "project-full" id = "cont-2">
-                    <h1><span>R</span>at-<span>M</span>aze <span>G</span>ame</h1>
-                    <p>A puzzle/game made in Java to compete with other developers. The "rat" communicates with other players' mazes over the server using TCP/IP and solves the randomly generated maze. The "rat" uses the Breath First Search algorithm to solve the maze in optimal time.</p>
-                </div>
-                <div class = "project-full" id = "cont-3">
-                    <h1><span>M</span>chithiwala.co.nf</h1>
-                    <p>This website was built from scratch in HTML, CSS, Javascript, and jQuery with minimal use of external plugins in order to learn the fundamentals of web development. The website is also fully responsive.</p>
-                </div>
-                <div class = "project-full" id = "cont-4">
-                    <h1><span>R</span>ound <span>R</span>obin <span>S</span>cheduler</h1>
-                    <p>A scheduler made in Java which creates a schedule for the teams based on the Round-Robin algorithm. The schedule can take any number of teams and be limited by date. Also includes a backend database system to store scores/results.</p>
-                </div>
-                <div class = "project-full" id = "cont-5">
-                    <h1> <span>C</span>urrency <span>C</span>onverter</h1>
-                    <p>A realtime currency converter built in Java. It gets the latest currency rates via REST/JSON and parses them using GSON. Has options for displaying current rates and converting to different currencies. Currently supports over 15 currencies.</p>
-                </div>
-            </div>
-            
-            <div id = "anchor-footer" class = "anchor">
-                <a id = "footer"></a>
-            </div>
+        <div class="description content" id="ikra-des"> 
+            <h1> Ikra </h1>
+            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search.</p> 
+        <button class="but" id="ikra-but"> Back </button>
+        <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Go to Website </button>
         </div>
         
-<!--------------------------------------------------->
+        <div class="description content" id="currency-des">
+            <h1>Currencer</h1>
+            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
+        <button class="but" id="currency-but"> Back </button>
+        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Go to Website </button>
+            </div>
         
-        <!--<div class = "footer">
-            <p id = "copyright">&#169 Mehtab Chithiwala</p>
-            </div> -->
+        <div class="description content" id="sockets-des">
+            <h1> Sockets </h1>
+            <p> Sockets is a turn based game made in Java to compete with fellow classmates. Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicated with the maze over the server using TCP/IP Socket communication, hence the name. </p> 
+       <button class="but" id="sockets-but"> Back </button>
+        <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Go to Website </button>     
+        </div>
+        
+        <div class="description content" id="scheduler-des">
+            <h1> Scheduler </h1>
+            <p> A scheduling system written in Java, which implements the Round-Robin Scheduling Algorithm. The system involved all aspects of the system, including the entry of teams, scheduling, scoring, time management, and UI. </p>
+        <button class="but" id="scheduler-but"> Back </button>
+        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Go to Website </button>
+        </div>
+        
+        <div class="contact content">
+            
+            <ul>
+                    <li><a id="fb" href="http://www.facebook.com/mehtabchithiwala" target= "_blank"><img src="facebook2.png" alt="fb"></a></li>
+                    <li><a id="git" href="http:///www.github.com/mchithiw" target ="_blank"><img src="github.png" alt="git"></a></li>
+                    <li><a href = "http://www.linkedin.com/in/mehtab94" target = "_blank"><img src="linkedin.png" alt="linkedin"></a></li>
+                    <li><a id="mail" href = "mailto:mehtab94@gmail.com"><img src="email3.png" alt="mail"></a></li>
+                </ul>          
+            
+        </div>
         
         <script src = "jquery.js"></script>
         <script src = "typer.js"></script>

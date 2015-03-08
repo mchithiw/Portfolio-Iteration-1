@@ -1,260 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* Desktop queries*/
+p {
+    line-height: 2;
+}
+
 html{
     width: 100vw;
-    height: 100%;
-    font-family: cursive;
-    font-size: 3vmin;
-    color: white;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Cardo";
-    background-color: #0e0f2f;
-    overflow-x: hidden;
-}
-
-body{
-    width: 100%;
-    height: 100%;
-}
-.anchor{
-    z-index: -1;
-}
-
-#anchor-about{
-    position: absolute;
-    top: 90vh;
-}
-
-#anchor-project{
-    position: absolute;
-    top: 90vh;
-}
-
-#anchor-footer{
-    position: absolute;
-    top: 290vh;
-}
-
-.nav{
-    position: relative;
-    float: right;
-    top: 40%;   
-}
-
-.nav ul{
-    list-style-type: none;
-    margin: 0;
-    margin-right: 4vmin;  
-}
-
-.nav li{
-    display: inline;
-    margin: 2vmin;
-}
-
-.header {
-    position: fixed;
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
+    height: 100vh;
     top: 0;
     left: 0;
-    opacity: .5;
+    font-family: "Raleway";
+    overflow-x: hidden;
+    background-color: #f0eaea; /*#f0eaea;*/
+    color: black;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 30vh;
     text-align: center;
-    font-size: 2.5vmin;
-    font-family: "Cardo";
-    z-index: 6;
+    background-color: #284676;
+}
+
+.name{
+    width: 80%;
+    margin: auto;
+    font-size: 2.5em;
+    line-height: 20vh;
+    color: #75a1e8;
+}
+
+.navbar{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+.navbar a{
+    color: #75a1e8;
+}
+.navbar ul, .contact ul, .portfolio ul{
+    width: 100%;
+    height: 100%;
+    margin: 2vmin 0;
+}
+
+.navbar li, .contact li{
+    display: inline;
+    margin: 5vw;
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 a:hover{
-    border-bottom: 1px solid white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.page{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0%;
-    font-family: "Cardo";
-}
-
-#landing-page{
-    top: 0vh;
-}
-
-.landing-title{
-    font-size: 8vmin;
-    font-family: "Cardo";
-    position: absolute;
-    height: 40%;
-    width: 80%;
-    align-content: center;
-    text-align: center;
-    top: 30%;
-    left: 10%;
-    color: white;
-}
-
-.landing-title p{
-    margin: 0;
-}
-.small-text{
-    font-size: 4vmin;
-}
-
-#about-page{
-    top: 100vh;
-    align-content: center;
-    text-align: center;
-}
-
-#typer-box{
-    position: absolute;
-    top: 52.5%;
-    left: 7.5%;
-    width: 80%;
-    height: 30%;
-    font-size: 3vmin;
-    font-family: "Cardo";
-    text-align: left;
-}
-
-#pic{
-    position: absolute;
-    width: 20%;
-    height: 30%;
-    top: 15%;
-    left: 40%;
-    margin: 0;
-}
-
-#mehtab{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.title{
-    font-size: 6vmin;
-    margin-top: 3vh;
-    text-align: center;
-}
-
-#project-page{
-    top: 200vh;
-    height: 100vh;
-}
-
-.project-box{
+.content{
     position: absolute;
     width: 90%;
-    height: 85%;
-    top: 15%;
+    height: 45%;
     left: 5%;
+    top: 50%;
+    text-align: center;
 }
 
-.box{
-    position: absolute;
-    width: 45%;
-    height: 35%;
+.about, .portfolio{
+    height: 55%;
+    top: 40%;
+}
+
+.lh{
+    display: block;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
+}
+
+.lp{
+    font-size: 1.2em;
+}
+
+#falcons{
+    color: red;
+}
+
+.abouts, .aboutpro, .aboutent{
+    margin-top: 3vh;
+}
+
+.contact img{
+    display: inline;
+    width: 10%;
+    height: 50%;
+}
+
+.contact a:hover{
+    border: none;
+    border-bottom: 4px solid white;
+}
+
+.portfolio li{
+    display: inline-block;
+    height: 75%;
+    width: 20%;
+    margin: 0 2vw;
+}
+
+
+.project{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 1.5em;
+    line-height: 40vh;
     cursor: pointer;
 }
 
-#box-5, #cont-5{
-    top: 0%;
-    left: 2.5%;
+.portfolio a{
+    border: none;
 }
 
-#box-2, #cont-2{
-    top: 0%;
-    left: 52.5%;
+.description h1 {
+    font-weight: bold;
+    margin-bottom: 4vh;
+    font-size: 1.5em;
 }
 
-#box-3, #cont-3{
-    top: 42.5%;
-    left: 2.5%;
+.project:hover{
+    border: 2px solid #75a1e8;
 }
 
-#box-4, #cont-4{
-    top: 42.5%;
-    left: 52.5%;
+.about b{
+    font-weight: normal;
+    color: #75a1e8;
 }
 
-.cont{
-    z-index: 3;
-    font-size: 2.5vmin;
-    text-align: center;
-    overflow-y:auto;
-    width: 45%;
-    height: 35%;
-    border: 3px solid #0e0f2f;
-    background-color: white;
-    color: black;
+.description h1{
+    color: #75a1e8;
 }
 
-.projects{
-    position: absolute;
-    cursor: pointer;
-    width: 45%;
+.portfolio b{
+    color: #75a1e8;
 }
 
-.name-box{
-    position: absolute;
-    width: 45%;
-    height: 5%;
-    text-align: center;
-    color: black;
-}
-
-#nb-2{
-    top: 37.5%;
-    left: 52.5%;
-}
-
-#nb-3{
-    top: 37.5%;
-    left 2.5%;
-}
-
-#nb-4{
-    top: 37.5%;
-    left: 52.5%;
-}
-
-#nb-5{
-    top: 37.5%;
-    left: 2.5%;
-}
-
-.footer{
-    position: absolute;
-    width: 100vw;
-    height: 20vh;
-    top: 290vh;
-    left: 0;
-    opacity: .5;
-    text-align: center;
-    font-size: 2.5vmin;
-    z-index: 7;
+.but, .but-l {
+    width: 12%;
+    background-color: #75a1e8;
     color: white;
-    background-color: black;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
-
-#copyright{
-    line-height: 20vh;
-    margin: 0;   
-}
-
-
-
-
-
-
 
 
 
