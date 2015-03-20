@@ -229,6 +229,7 @@ a:hover{
     left: 0;
     top: 90%;
     text-align: center;  
+    z-index: 7;
 }
 .social{
     width: 100%;
