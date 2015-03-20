@@ -6,6 +6,8 @@ $(function() {
     $(".description").hide();
     //$(".header-icon").hide();
     
+    
+    
     $("#about-button, #about-button-two").click(function() {
         $(".content").hide();
         $(".about").show();
@@ -16,11 +18,24 @@ $(function() {
         $(".portfolio").show();
     });
     
-    $("#contact-button").click(function() {
+    $("#resume-button").click(function() {
         $(".content").hide();
-        $(".contact").show();
+        $(".res").show();
     });
     
+    var img;
+    
+    $(".project").hover(function() {
+            $(this).find((".proName")).css("visibility", "visible");
+            img = $(this).css("background-image");
+            //$(this).css("opacity", ".30");
+            $(this).css("background-image", "none");
+    }, 
+        function() {
+            $(this).find((".proName")).css("visibility", "hidden");
+            //$(this).css("opacity", "1");
+            $(this).css("background-image", img);
+    });
     
   /*  var ikraContent = "Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search.";
     

@@ -24,6 +24,7 @@
                     <li><a class="tab" tabindex="3" id="about-button" href="#about">About Me</a></li>
                     <li><a class="tab" tabindex="1" id="portfolio-button" href="#portfolio">Portfolio</a></li>
                     <li><a class="tab"  tabindex="2" href = "Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a class="tab" tabindex="1" id="resume-button" href="#res">Ressume</a></li>
                    <!-- <li><a class="tab" tabindex="3" id="contact-button" href = "#footer">Contact Me</a></li> -->
                 </ul>                
             </nav>
@@ -49,16 +50,17 @@
                     <li><a class="tab" id="about-button-two" tabindex="3"  href="#about">About</a></li>
                     <li><a class="tab" id="portfolio-button-two" tabindex="1" href="#portfolio">Portfolio</a></li>
                     <li><a href = "Resume.pdf" target = "_blank">Resume</a></li>
+                    <li><a href="#res" id="resume-button-two" class="tab">Ressume</a></li>
                 </ul>       
         </div>
         
         <div class="footer">
             
             <ul class="social">
-                    <li><a id="fb" href="http://www.facebook.com/mehtabchithiwala" target= "_blank"><img src="facebook11.png" alt="fb"></a></li>
-                    <li><a id="git" href="http:///www.github.com/mchithiw" target ="_blank"><img src="github11.png" alt="git"></a></li>
-                    <li><a href = "http://www.linkedin.com/in/mehtab94" target = "_blank"><img src="linkedin11.png" alt="linkedin"></a></li>
-                    <li><a id="mail" href = "mailto:mehtab94@gmail.com"><img src="email11.png" alt="mail"></a></li>
+                    <li><a id="fb" href="http://www.facebook.com/mehtabchithiwala" target= "_blank"><img src="facebookblue.png" alt="fb"></a></li>
+                    <li><a id="git" href="http:///www.github.com/mchithiw" target ="_blank"><img src="githubblue.png" alt="git"></a></li>
+                    <li><a href = "http://www.linkedin.com/in/mehtab94" target = "_blank"><img src="linkedinblue.png" alt="linkedin"></a></li>
+                    <li><a id="mail" href = "mailto:mehtab94@gmail.com"><img src="emailblue.png" alt="mail"></a></li>
                 </ul>         
             
         </div>
@@ -85,21 +87,26 @@
         <div class="portfolio content">
             
             <ul>
-                <li><a href="#"><div class="project" id="ikra">
-                        <b>Ikra</b>
+                
+                <li><a href="#"><div class="project" id="ikra">          <b class="proName"> Ikra </b>
+                    <!--<div class="title" id="ikraImg"></div>-->
+                    
+                    
+                </div></a>
+                </li>
+                
+                <li><a href="#"><div class="project" id="currency">     <b class="proName">Currencer</b>
                     </div></a>
                 </li>
-                <li><a href="#"><div class="project" id="currency">
-                        <b>Currencer</b>
-                    </div></a>
-                </li>
+                
                 <li><a><div class="project" id="sockets">
-                        <b>Sockets</b>
+                    <b class="proName">Sockets</b>
                     </div></a>
                 </li>
-                <li><div class="project" id="scheduler">
-                        <b>Scheduler</b>
-                        </div>
+                
+                <li><a><div class="project" id="scheduler">
+                    <b class="proName">Scheduler</b>
+                    </div></a>
                 </li>
                     
                 </ul> 
@@ -108,28 +115,28 @@
         
         <div class="description content" id="ikra-des"> 
             <h1> Ikra </h1>
-            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search.</p> 
+            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search to provide faster results for the specific topics we were interested in.</p> 
         <button class="but" id="ikra-but"> Back </button>
         <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Website </button>
         </div>
         
         <div class="description content" id="currency-des">
             <h1>Currencer</h1>
-            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
+            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The rates are updated very 10 minutes to accurately match real-time changes. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
         <button class="but" id="currency-but"> Back </button>
         <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Website </button>
             </div>
         
         <div class="description content" id="sockets-des">
             <h1> Sockets </h1>
-            <p> Sockets is a turn based game made in Java to compete with fellow classmates. Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicated with the maze over the server using TCP/IP Socket communication, hence the name. </p> 
+            <p> Sockets is a turn based game made in Java to compete with fellow classmates. Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicate with the maze over the server using TCP/IP Socket communication, hence the name. </p> 
        <button class="but" id="sockets-but"> Back </button>
         <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button>     
         </div>
         
         <div class="description content" id="scheduler-des">
             <h1> Scheduler </h1>
-            <p> A scheduling system written in Java, which implements the Round-Robin Scheduling Algorithm. The system involved all aspects of the system, including the entry of teams, scheduling, scoring, time management, and UI. </p>
+            <p> A scheduling system written in Java to properly store scores for games, which implemented the Round-Robin Scheduling Algorithm. The system involved all aspects of the process, including the entry of teams, scheduling, scoring, time management, and UI. </p>
         <button class="but" id="scheduler-but"> Back </button>
         <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button>
         </div>
@@ -144,6 +151,66 @@
                 </ul>          
             
         </div>
+        
+        <div class="res content">
+        
+            <div class="education res-content">
+            
+                <h1> Education</h1>
+                <br/>
+                <h2> Southern Polytechnic State University - B.S. in Computer Science (May 2012 -  Dec 2015)</h2>
+                
+            </div>
+            
+            <div class="experience res-content">
+            
+                <div class="work" id="work-one">
+                
+                    <h1> Georgia Pacific - Software Developer Intern</h1> <br/>
+                    <p> Developed and helped maintain various software and web applications for the EDI team. Built a website from conception to production for internal and external viewing of updated statistics of various GP divisions.</p>
+                </div>
+                
+                <div class="work" id="work-two">
+                
+                    <h1> Home Depot - IT Intern</h1> <br/>
+                </div>
+            
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         <script src = "jquery.js"></script>
         <script src = "typer.js"></script>

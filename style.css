@@ -47,7 +47,7 @@ html{
     font-family: "Raleway";
     overflow-x: hidden;
     background-color: white;/*hsla(217, 49%, 31%, 0.78); /*#f0eaea;*/
-    color: #284676;;
+    color: #284676;
 }
 
 .header{
@@ -120,7 +120,7 @@ a:hover{
     text-align: center;
 }
 
-.about, .portfolio{
+.about, .portfolio, .res{
     height: 55%;
     top: 40%;
 }
@@ -165,9 +165,56 @@ a:hover{
     width: 100%;
     height: 100%;
     border: 1px solid #75a1e8;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 40vh;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio b{
+    color: #284676;
+    font-weight: normal;
+    color: white;
+}
+
+.project:hover{
+    background-color: #284676;
+}
+
+#ikra{
+    background-image: url(cali.jpg);
+}
+
+#currency{
+    background-image: url(currency.jpg);
+}
+
+#sockets{
+    background-image: url(maze.jpg);
+}
+
+#scheduler{
+    background-image: url(robin2.jpg);
+}
+
+/*.title{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #75a1e8;
+    font-size: 1.5em;
+    line-height: 40vh;
+    cursor: pointer;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}*/
+
+.proName{
+    visibility: hidden;
 }
 
 .portfolio a{
@@ -180,10 +227,6 @@ a:hover{
     font-size: 1.5em;
 }
 
-.project:hover{
-    background-color: #a0bdeb;
-}
-
 .about b{
     font-weight: normal;
     color: #75a1e8;
@@ -191,12 +234,6 @@ a:hover{
 
 .description h1{
     color: #75a1e8;
-}
-
-.portfolio b{
-    color: white;
-    font-weight: normal;
-    color: #284676;
 }
 
 .icons{
@@ -244,7 +281,7 @@ a:hover{
     margin: 2vh 5vw;
 }
 
-img{
+.social img{
     display: inline;
     width: 40px;
     height: 40px;
@@ -309,7 +346,55 @@ img{
     color: white;
     cursor: pointer;
     z-index: 11;
+    
 }
+
+.res{
+    height: 45%;
+}
+
+.res h1{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.res-content{
+    color: black;
+}
+
+.education{
+    position: absolute;
+    text-align: left;
+    width: 40%;
+    height: 20%;
+    top: 0;
+    left: 0;
+}
+
+.experience{
+    position: absolute;
+    text-align: left;
+    width: 60%;
+    height: 80%;
+    top: 0%;
+    left: 45%;
+}
+
+.work{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+}
+
+#work-one{
+    top: 0;
+}
+
+#work-two{
+    top: 50%;
+}
+
 
 @media (max-width: 800px) {
     
@@ -380,7 +465,6 @@ img{
         display: block;
     }
     
-    
 }
 
 @media (max-height: 600px and max-width: 800px){
@@ -412,6 +496,10 @@ img{
     .icons img{
         width: 32px;
         height: 32px;
+    }
+    
+    #menu{
+        display: block;
     }
     
     .header2{
