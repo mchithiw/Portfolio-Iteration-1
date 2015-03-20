@@ -4,13 +4,14 @@ $(function() {
     $(".content").hide();
     $(".landing").show();
     $(".description").hide();
+    //$(".header-icon").hide();
     
-    $("#about-button").click(function() {
+    $("#about-button, #about-button-two").click(function() {
         $(".content").hide();
         $(".about").show();
     });
     
-    $("#portfolio-button").click(function() {
+    $("#portfolio-button, #portfolio-button-two").click(function() {
         $(".content").hide();
         $(".portfolio").show();
     });
@@ -19,6 +20,7 @@ $(function() {
         $(".content").hide();
         $(".contact").show();
     });
+    
     
   /*  var ikraContent = "Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search.";
     
@@ -85,6 +87,49 @@ $(function() {
 
     
     */
+    
+    var w = $(window).width();
+
+    $(".header-2").hide();
+    
+    $("#menu").click(function() {
+        $(".header-2").toggle();
+    });
+    
+    if (w > 800)
+    {
+        //$(".header-icon").hide();
+    }
+    
+    if (w < 801)
+    {
+        //$(".header-icon").show();
+        //$(".header").hide();
+    }
+
+
+    $(window).resize(function() {
+        var wd = $(window).width();
+        if (wd < 801)
+        {
+            //$(".header").hide();
+            //$(".header-icon").show();
+        }
+        else
+        {
+            $(".header").show();
+            //$(".header-icon").hide();
+            $(".header-2").hide();
+        }
+    });
+
+
+    $("a").click(function() {
+        if (($(".header-2").css("display") != "none"))
+        {
+            $(".header-2").hide();
+        }
+    });
     
     var h = $(window).height();
 

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
 <html>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-     scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=9" />
     
     <head>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" media= "(max-width:800px)" href="main-small.css">
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -22,13 +21,51 @@
             <h1 class="name">Mehtab Chithiwala</h1>
             <nav class = "navbar">
                 <ul>
-                    <li><a class="tab" tabindex="0" id="about-button" href="#about">About Me</a></li>
+                    <li><a class="tab" tabindex="3" id="about-button" href="#about">About Me</a></li>
                     <li><a class="tab" tabindex="1" id="portfolio-button" href="#portfolio">Portfolio</a></li>
                     <li><a class="tab"  tabindex="2" href = "Resume.pdf" target = "_blank">Resume</a></li>
-                    <li><a class="tab" tabindex="3" id="contact-button" href = "#footer">Contact Me</a></li>
+                   <!-- <li><a class="tab" tabindex="3" id="contact-button" href = "#footer">Contact Me</a></li> -->
                 </ul>                
             </nav>
+            
+            <div class="icons">
+            
+            <ul class="social">
+                    <li><a id="fb" href="http://www.facebook.com/mehtabchithiwala" target= "_blank"><img src="facebookw.png" alt="fb"></a></li>
+                    <li><a id="git" href="http:///www.github.com/mchithiw" target ="_blank"><img src="githubw.png" alt="git"></a></li>
+                    <li><a href = "http://www.linkedin.com/in/mehtab94" target = "_blank"><img src="linkedinw.png" alt="linkedin"></a></li>
+                    <li><a id="mail" href = "mailto:mehtab94@gmail.com"><img src="emailw.png" alt="mail"></a></li>
+                </ul>         
+            
         </div>
+            
+            <div class = "header-icon" id="menu"> Menu
+        </div>
+            
+    </div>
+        
+        <div class = "header-2">
+                <ul>
+                    <li><a class="tab" id="about-button-two" tabindex="3"  href="#about">About</a></li>
+                    <li><a class="tab" id="portfolio-button-two" tabindex="1" href="#portfolio">Portfolio</a></li>
+                    <li><a href = "Resume.pdf" target = "_blank">Resume</a></li>
+                </ul>       
+        </div>
+        
+        <div class="footer">
+            
+            <ul class="social">
+                    <li><a id="fb" href="http://www.facebook.com/mehtabchithiwala" target= "_blank"><img src="facebook11.png" alt="fb"></a></li>
+                    <li><a id="git" href="http:///www.github.com/mchithiw" target ="_blank"><img src="github11.png" alt="git"></a></li>
+                    <li><a href = "http://www.linkedin.com/in/mehtab94" target = "_blank"><img src="linkedin11.png" alt="linkedin"></a></li>
+                    <li><a id="mail" href = "mailto:mehtab94@gmail.com"><img src="email11.png" alt="mail"></a></li>
+                </ul>         
+            
+        </div>
+        
+        
+        
+        <!-- All tabs below this points -->
         
         <div class="landing content">
             <hl class="lh"></hl>
@@ -80,21 +117,21 @@
             <h1>Currencer</h1>
             <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
         <button class="but" id="currency-but"> Back </button>
-        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Go to Website </button>
+        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Website </button>
             </div>
         
         <div class="description content" id="sockets-des">
             <h1> Sockets </h1>
             <p> Sockets is a turn based game made in Java to compete with fellow classmates. Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicated with the maze over the server using TCP/IP Socket communication, hence the name. </p> 
        <button class="but" id="sockets-but"> Back </button>
-        <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Go to Website </button>     
+        <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Website </button>     
         </div>
         
         <div class="description content" id="scheduler-des">
             <h1> Scheduler </h1>
             <p> A scheduling system written in Java, which implements the Round-Robin Scheduling Algorithm. The system involved all aspects of the system, including the entry of teams, scheduling, scoring, time management, and UI. </p>
         <button class="but" id="scheduler-but"> Back </button>
-        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Go to Website </button>
+        <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Website </button>
         </div>
         
         <div class="contact content">
@@ -112,18 +149,6 @@
         <script src = "typer.js"></script>
         <script src = "backstretch.js"></script>
         <script src = "index.js"></script>
-		
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-57756713-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
     </body>
     
 </html>
