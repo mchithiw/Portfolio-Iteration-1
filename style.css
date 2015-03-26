@@ -59,14 +59,13 @@ html{
     top: 0;
     left: 0;
     text-align: center;
-    background-color: #284676;
     z-index: 5;
     background-color: #284676;
-background-image: url("content/dark-wood.png");
+    background-image: url("content/dark-wood.png");
 }
 
 .name{
-    width: 80%;
+    width: 70%;
     margin: auto;
     font-size: 2.5em;
     line-height: 20vh;
@@ -144,8 +143,8 @@ a:hover{
     font-size: 1.2em;
 }
 
-#falcons{
-    color: hsla(217, 49%, 31%, 1);
+.lp a{
+    color: #3b6dbe;
 }
 
 .abouts, .aboutpro, .aboutent{
@@ -161,14 +160,19 @@ a:hover{
     overflow-y: hidden;
 }
 
+.portfolio ul{  
+    height: 90%;
+}
 .portfolio li{
     display: inline-block;
-    height: 75%;
+    height: 100%;
     width: 20%;
     margin: 0 2vw;
     padding: 0;
     background-image: url("content/dark-wood.png");
     background-color: #284676;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 #more{
@@ -182,15 +186,17 @@ a:hover{
     padding: 0;
     margin: 0;
     width: 20%;
-    height: 75%;
+    height: 90%;
     top: 0;
     font-size: 2em;
-    line-height: 40vh;
+    line-height: 48vh;
     cursor: pointer;
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .portfolio b{
@@ -261,6 +267,11 @@ a:hover{
     left: 20%;
 }
 
+.description p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
 .description h1{
     color: #3b6dbe;
 }
@@ -281,7 +292,7 @@ a:hover{
     height: 50px;
     background-color: #284676;
     color: white;
-    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-right: 2vw;
     cursor: pointer;
     -moz-border-radius: 5px;
@@ -398,7 +409,7 @@ a:hover{
     position: absolute;
     text-align: left;
     width: 44%;
-    height: 100%;
+    min-height: 100%;
     top: 0;
     left: 3%;
 }
@@ -407,7 +418,7 @@ a:hover{
     position: absolute;
     text-align: left;
     width: 44%;
-    height: 100%;
+    min-height: 100%;
     top: 0%;
     left: 53%;
 }
@@ -429,20 +440,27 @@ a:hover{
     color: #284676;
 }
 
-.skill-list li, .tools-list li{
-    margin: 1vh 0;
+.skill-list li, .work-list li{
+    margin: 2vh 0;
 }
 
-.skill-list{
+.skill-list, .work-list{
     list-style: square;
-}
-
-.tools-list{
-    list-style: disc;
+    margin-left: 2vw;
 }
 
 .res a{
     border: none;
+}
+
+#college{
+    font-weight: bold;
+    color: #3b6dbe;
+}
+
+#gpa{
+    font-weight: bold;
+    color: #284676;
 }
 
 @media (max-width: 800px) {
@@ -463,6 +481,9 @@ a:hover{
         font-size: 16px;
     }
     
+    .portfolio ul{
+        height: 100%;
+    }
     .portfolio{
         height: 200vh;
         width: 70%;
@@ -503,6 +524,10 @@ a:hover{
     
     .portfolio li:first-child{
         margin-top: 12vh;
+    }
+    
+    .description p{
+        font-size: 18px;
     }
     
     .navbar{
@@ -615,6 +640,10 @@ a:hover{
     }
     .social li{
         margin: 2vh 1.5vw;
+    }
+    
+    #menu{
+        font-size: 26px;
     }
     
     .res p{

@@ -77,7 +77,7 @@
             <p class="aboutp"> Hi, I'm Mehtab Chithiwala. I'm a 3rd year student at Southern Polytechnic State University. I love to spend my free time making interesting projects and improving my programming skills. I also enjoy volunteering around the community, watching all kinds of sports (<span id="falcons">Go Falcons!</span>), and spending time with my friends and family. If you would like to get in touch with me, feel free to to reach out via LinkedIn, Facebook, GitHub, or Email.
             </p>
              <p class="abouts"> <b>Current Courses</b>: Operating Systems, Programming Language and Concepts, Software Architechture and Design, Advanced Database Systems.              </p>
-            <p class="aboutpro"> <b>Current Project</b>: Quran Application.
+            <p class="aboutpro"> <b>Current Project</b>: Ikra.
              </p>
             <p class="aboutent"> <b>Current Entertainment</b>: Cricket World Cup!
             </p>
@@ -110,30 +110,30 @@
         
         <div class="description content" id="ikra-des"> 
             <h1> Ikra </h1>
-            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search to provide faster results for the specific topics we were interested in.</p> 
-        <button class="but" id="ikra-but"> Back </button>
+            <button class="but" id="ikra-but"> Back </button>
         <button onclick="location.href='http://ikra.mehtabc.com'" class="but-l"> Website </button>
+            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search to provide faster results for the specific topics we were interested in.</p> 
         </div>
         
         <div class="description content" id="currency-des">
             <h1>Currencer</h1>
-            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The rates are updated very 10 minutes to accurately match real-time changes. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
-        <button class="but" id="currency-but"> Back </button>
+            <button class="but" id="currency-but"> Back </button>
         <button onclick="location.href='http://currency.mehtabc.com'" class="but-l"> Website </button>
+            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The rates are updated very 10 minutes to accurately match real-time changes. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
             </div>
         
         <div class="description content" id="sockets-des">
             <h1> Sockets </h1>
-            <p> Sockets is a turn based game made in Java to compete with fellow classmates. The concept of the game somewhat resembles "Battleship". Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicate with the maze over the server using TCP/IP Socket communication, hence the name. </p> 
-       <button class="but" id="sockets-but"> Back </button>
-        <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button>     
+            <button class="but" id="sockets-but"> Back </button>
+        <!-- <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button> -->
+            <p> Sockets is a turn based game made in Java to compete with fellow classmates. The concept of the game somewhat resembles "Battleship". Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicate with the maze over the server using TCP/IP Socket communication, hence the name. </p>     
         </div>
         
         <div class="description content" id="scheduler-des">
             <h1> Robin </h1>
+            <button class="but" id="scheduler-but"> Back </button>
+       <!-- <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button> -->
             <p> A scheduling system written in Java to properly create scheules and store scores for games/tournaments, which implemented the Round-Robin Scheduling Algorithm. The system involved all aspects of the process, including the entry of teams, scheduling, scoring, time management, and UI. </p>
-        <button class="but" id="scheduler-but"> Back </button>
-        <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Website </button>
         </div>
         
         <div class="contact content">
@@ -153,16 +153,18 @@
             
                 <a href="Resume.pdf" target="_blank"> <img src="content/download.png" alt="download"> - Download PDF</a>
                 <h1> Education</h1>
-                <p> Southern Polytechnic State University - B.S. in Computer Science - 4.00 GPA: <span> (May 2012 -  Dec 2015)</span></p>
+                <p> <span id="college">Southern Polytechnic State University</span> - B.S. in Computer Science - <b id="gpa">4.00 GPA</b>: <span> (May 2012 -  Dec 2015)</span></p>
                  
                 <h1> Languages and Tools</h1>
                 
                 <ul class="skill-list">
-                    <li> Java - <span>Proficent (3 years)</span> - Eclipse</li>
-                    <li> HTML5 &amp; CSS3 - <span>Proficent (1.5 years)</span> - Photoshop</li>
-                    <li> Javascript &amp; jQuery - <span>Proficent (1 year)</span> - Brackets</li>
-                    <li> SQL - <span>Proficent (1 year)</span> - Oracle &amp; SQL Server</li>
-                    <li> C++ - <span>Beginner (6 months)</span> - Visual Studio</li>
+                    
+                    <li> Java (Eclipse) - <span>Proficent (3 years)</span></li>
+                    <li> HTML5 &amp; CSS3 (Photoshop) - <span>Proficent (1.5 years)</span></li>
+                    <li> Javascript &amp; jQuery (Brackets) - <span>Proficent (1 year)</span></li>
+                    <li> SQL (Oracle &amp; SQL Server) - <span>Proficent (1 year)</span></li>
+                    <li> C++ (Visual Studio) - <span>Beginner (6 months)</span></li>
+                    
                 </ul>
 
             </div>
@@ -173,12 +175,23 @@
                 
                 
                 <h2> Georgia Pacific - Software Developer Intern: <span>Nov 2014 - Present</span></h2>
-                    <p> Developed and helped maintain various software and web applications for the EDI team. Built a website from conception to production for internal and external viewing of updated statistics of various GP divisions.</p>
+                    
+                <ul class="work-list">
+                
+                    <li>  Developed and helped maintain various software and web applications for the EDI team. </li>
+                    <li> Built a website from requirements to deployment for tracking statistics of different GP Divisions in HTML/CSS/JS/jQuery with a C# .NET backend.</li>
+                    
+                </ul>
                 
                 
                 <h2> Plus Materials - Data Analyst Intern: <span>May 2012 - Aug 2012</span></h2>
+                
+                <ul class="work-list">
+                
+                    <li>  Managed the input and analysis of data for an export-import corporation.</li>
+                    <li>Handled proper flow and maintainence of data and prepared analysis and reports of data to present to management.</li>
                     
-                    <p> Managed the input and analysis of data for an export-import corporation. Handled proper flow and maintainence of data and prepared analysis and reports of data to present to management. </p>
+                </ul>
             
             </div>
                       

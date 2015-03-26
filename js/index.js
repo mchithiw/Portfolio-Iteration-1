@@ -152,7 +152,7 @@ $(function() {
     var about = "Hi, I'm Mehtab Chithiwala. I'm currently attending SPSU for Computer Science, and hope to graduate in Spring 2015. I'm also interning at Georgia Pacific as a Software Developer. In my free time, I like to dabble in new technologies and create interesting projects, some of which can be seen in my portfolio below. I am also a huge sports fan (Go Falcons!) and like to volunteer around the community in my spare time. If you would like to get in touch with me, feel free to contact me via LinkedIn, Email, or even Facebook.";
     
     var intro = "Software Developer, Atlanta.";
-    var intro2 = "Currently studying at SPSU and Interning at Georgia Pacfic. Looking for internship opportunities for Fall 2015 and full-time positions starting from January 2016.";
+    var intro2 = "Currently studying at <a href=http://www.spsu.edu>SPSU</a> and interning at <a href=http://www.gp.com>Georgia Pacific.</a> Looking for full time opportunities for 2016.";
 
     
     var typeDetail = function() {
