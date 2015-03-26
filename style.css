@@ -48,7 +48,7 @@ html{
     overflow-x: hidden;
     background-color: white;/*hsla(217, 49%, 31%, 0.78); /*#f0eaea;*/
     color: #284676;
-    background-image: url("retina-wood.png");
+    background-image: url("content/retina-wood.png");
 }
 
 .header{
@@ -62,7 +62,7 @@ html{
     background-color: #284676;
     z-index: 5;
     background-color: #284676;
-background-image: url("dark-wood.png");
+background-image: url("content/dark-wood.png");
 }
 
 .name{
@@ -167,7 +167,7 @@ a:hover{
     width: 20%;
     margin: 0 2vw;
     padding: 0;
-    background-image: url("dark-wood.png");
+    background-image: url("content/dark-wood.png");
     background-color: #284676;
 }
 
@@ -200,19 +200,19 @@ a:hover{
 }
 
 #ikra{
-    background-image: url(cali.jpg);
+    background-image: url(content/cali2.jpg);
 }
 
 #currency{
-    background-image: url(currency.jpg);
+    background-image: url(content/currency.jpg);
 }
 
 #sockets{
-    background-image: url(maze.jpg);
+    background-image: url(content/maze.jpg);
 }
 
 #scheduler{
-    background-image: url(schedule2.jpg);
+    background-image: url(content/schedule2.jpg);
 }
 
 .project:hover{
@@ -464,9 +464,9 @@ a:hover{
     }
     
     .portfolio{
-        height: 100vh;
-        width: 100%;
-        left: 0%;
+        height: 200vh;
+        width: 70%;
+        left: 15%;
         text-align: center;
         top: 30vh;
         overflow-x: hidden;
@@ -475,10 +475,12 @@ a:hover{
     }
     
     .portfolio li{
-        height: 25%;
+        height: 17.5%;
         width: 100%;
         left: 0;
-        margin: 0;
+        margin: 6vh 0;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
     }
     
     .project{
@@ -488,14 +490,19 @@ a:hover{
         position: static;
         height: 100%;
         width: 100%;
-        line-height: 25vh;
+        line-height: 35vh;
         border: none;
-        border-bottom: 3px solid #75a1e8;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
     }
     
     .portfolio ul a{
         margin: 0;
         padding: 0;
+    }
+    
+    .portfolio li:first-child{
+        margin-top: 12vh;
     }
     
     .navbar{
@@ -588,6 +595,10 @@ a:hover{
 
 @media (max-width: 500px) {
 
+    .portfolio{
+        width: 100%;
+        left: 0;
+    }
     .name{
         font-size: 26px;
         line-height: 1;
