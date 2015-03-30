@@ -108,9 +108,8 @@ a:hover{
     border-bottom: 2px solid white;
 }
 
-.tab:focus{
-    outline: none;
-    border-bottom: 2px solid white;
+.nav:hover{
+    border-bottom: none;
 }
 
 .content{
@@ -158,6 +157,7 @@ a:hover{
 
 .portfolio{
     overflow-y: hidden;
+    height: 50%;
 }
 
 .portfolio ul{  
@@ -255,7 +255,8 @@ a:hover{
 }
 
 .about{
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.5
 }
 .about b{
     font-weight: bold;
@@ -616,6 +617,13 @@ a:hover{
         height: 40px;
     }
     
+}
+
+@media (max-height: 750px and max-width: 800px) {
+    
+    .portfolio{
+        height: 55%;
+    }
 }
 
 @media (max-width: 500px) {

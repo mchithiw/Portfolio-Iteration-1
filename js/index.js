@@ -6,8 +6,6 @@ $(function() {
     $(".description").hide();
     //$(".header-icon").hide();
     
-    
-    
     $("#about-button, #about-button-two").click(function() {
         $(".content").hide();
         $(".about").show();
@@ -18,24 +16,11 @@ $(function() {
         $(".portfolio").show();
     });
     
-    $("#resume-button, #resume-button-two").click(function() {
+    $("#contact-button").click(function() {
         $(".content").hide();
-        $(".res").show();
+        $(".contact").show();
     });
     
-    var img;
-    
-    $(".project").hover(function() {
-            $(this).find((".proName")).css("visibility", "visible");
-            img = $(this).css("background-image");
-            //$(this).css("opacity", ".30");
-            $(this).css("background-image", "none");
-    }, 
-        function() {
-            $(this).find((".proName")).css("visibility", "hidden");
-            //$(this).css("opacity", "1");
-            $(this).css("background-image", img);
-    });
     
   /*  var ikraContent = "Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search.";
     
@@ -152,7 +137,7 @@ $(function() {
     var about = "Hi, I'm Mehtab Chithiwala. I'm currently attending SPSU for Computer Science, and hope to graduate in Spring 2015. I'm also interning at Georgia Pacific as a Software Developer. In my free time, I like to dabble in new technologies and create interesting projects, some of which can be seen in my portfolio below. I am also a huge sports fan (Go Falcons!) and like to volunteer around the community in my spare time. If you would like to get in touch with me, feel free to contact me via LinkedIn, Email, or even Facebook.";
     
     var intro = "Software Developer, Atlanta.";
-    var intro2 = "Currently studying at <a href=http://www.spsu.edu>SPSU</a> and interning at <a href=http://www.gp.com>Georgia Pacific.</a> Looking for full time opportunities for 2016.";
+    var intro2 = "Currently studying at SPSU and Interning at Georgia Pacfic.";
 
     
     var typeDetail = function() {
