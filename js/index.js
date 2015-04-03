@@ -6,6 +6,32 @@ $(function() {
     $(".description").hide();
     //$(".header-icon").hide();
     
+    $(".nav").hover(function() {
+        //$(this).css("border-top", "1px solid white");
+        $(this).css("color", "white");
+    }, function() {
+        //$(this).css("border-top", "none");
+        $(this).css("color", "#75a1e8");
+    });
+    
+    $(".tab").hover(function() {
+        //$(this).css("border-top", "1px solid white");
+        $(this).css("color", "white");
+    }, function() {
+        //$(this).css("border-top", "none");
+        $(this).css("color", "black");
+    });
+    
+    $(".tab, .nav").click(function() {
+        $(".tab, .nav").css("border", "none");
+        $(this).css("border-bottom", "1px solid white");
+    });
+
+     $("#landing-button, #landing-button-two").click(function() {
+        $(".content").hide();
+        $(".landing").show();
+    });
+    
     $("#about-button, #about-button-two").click(function() {
         $(".content").hide();
         $(".about").show();
@@ -14,11 +40,6 @@ $(function() {
     $("#portfolio-button, #portfolio-button-two").click(function() {
         $(".content").hide();
         $(".portfolio").show();
-    });
-    
-    $("#contact-button").click(function() {
-        $(".content").hide();
-        $(".contact").show();
     });
     
      $("#resume-button, #resume-button-two").click(function() {
