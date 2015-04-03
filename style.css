@@ -258,6 +258,8 @@ a:hover{
 }
 
 .about{
+    width: 60%;
+    left: 20%;
     font-size: 17px;
     line-height: 1.5
 }
@@ -487,6 +489,8 @@ a:hover{
     }
     
     .about{
+    	width: 90%;
+    	left: 5%;
         font-size: 16px;
     }
     
