@@ -121,6 +121,9 @@ a:hover{
     text-align: center;
 }
 
+.description{
+    top: 40%;	
+}
 .about, .portfolio, .res{
     height: 55%;
     top: 40%;
