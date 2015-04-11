@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-     scale=1.0">
+    
+    <head>
+    <link rel="shortcut icon" href="http://faviconist.com/icons/30c71c3c70200d0de995a5797264885c/favicon.ico" />
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        
+        <title> My Projects </title>
+        
+    </head>
+    
+    <body>
+
+        <div class="header">
+            <h1 class="name">Mehtab Chithiwala</h1>
+            <nav class = "navbar">
+                <ul>
+                    <li><a class="nav" tabindex="4" id="landing-button" href="index.html">Home</a></li>
+                    <li><a class="nav" tabindex="3" id="about-button" href="about.html">About</a></li>
+                    <li><a class="nav" tabindex="1" id="portfolio-button" href="portfolio.html" style="border-bottom: 1px solid white">Portfolio</a></li>
+                    <li><a class="nav" tabindex="2" id="resume-button" href="resume.html">Resume</a></li>
+                   <!-- <li><a class="tab" tabindex="3" id="contact-button" href = "#footer">Contact Me</a></li> -->
+                </ul>                
+            </nav>
+            
+            <div class = "header-icon" id="menu"> III
+        </div>
+            
+    </div>
+        
+        <div class = "header-2">
+                <ul>
+                     <li><a class="tab" id="landing-button-two" tabindex="4"  href="index.html">Home</a></li>
+                    <li><a class="tab" id="about-button-two" tabindex="3"  href="about.html">About Me</a></li>
+                    <li><a class="tab" id="portfolio-button-two" tabindex="1" href="portfolio.html" >Portfolio</a></li>
+                    <li><a href="resume.html" id="resume-button-two" class="tab">Resume</a></li>
+                </ul>       
+        </div>
+        
+        
+        <!-- All tabs below this points -->
+        
+        <div class="portfolio content">
+        
+
+            <ul>
+                
+                <li><a href="#"><div class="project" id="ikra">          <b class="proName"> Ikra </b>      
+                </div></a>
+                </li>
+                
+                <li><a href="#"><div class="project" id="currency">     <b class="proName">Currencer</b>
+                    </div></a>
+                </li>
+                
+                <li><a><div class="project" id="sockets">
+                    <b class="proName">Sockets</b>
+                    </div></a>
+                </li>
+                
+                <li><a><div class="project" id="scheduler">
+                    <b class="proName">Robin</b>
+                    </div></a>
+                </li>
+                    
+                </ul> 
+        </div>
+        
+        <div class="description content" id="ikra-des"> 
+            <h1> Ikra </h1>
+            <button class="but" id="ikra-but"> Back </button>
+        <button onclick="location.href='http://mehtabc.com/ikra'" class="but-l"> Website </button>
+            <p> Ikra allows users to read verses of the Quran by a specified Ayat, a complete Sura, or by Keywords. I initially made this because a few friends and I got tired of skimming through the Quran to find a specific topic and wanted a keyword search to provide faster results for the specific topics we were interested in.</p> 
+        </div>
+        
+        <div class="description content" id="currency-des">
+            <h1>Currencer</h1>
+            <button class="but" id="currency-but"> Back </button>
+        <button onclick="location.href='http://mehtabc.com/currency'" class="but-l"> Website </button>
+            <p> A Currency Converter that gets the latest currency data for over 165 countries and allows free conversion between them. The rates are updated very 10 minutes to accurately match real-time changes. The same application was also ported as a Java App, using the GSON library to parse the JSON from the API calls. </p> 
+            </div>
+        
+        <div class="description content" id="sockets-des">
+            <h1> Sockets </h1>
+            <button class="but" id="sockets-but"> Back </button>
+         <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Github </button> 
+            
+            <p> Sockets is a turn based game made in Java to compete with fellow classmates. The concept of the game somewhat resembles "Battleship". Each player has a rat and a maze, and the rat tries to solve other people's mazes in the most optimal way. The rats communicate with the maze over the server using TCP/IP Socket communication, hence the name. </p>     
+        </div>
+        
+        <div class="description content" id="scheduler-des">
+            <h1> Robin </h1>
+            <button class="but" id="scheduler-but"> Back </button>
+        <button onclick="location.href='http://github.com/mchithiw'" class="but-l"> Github </button> 
+            
+            <p> A scheduling system written in Java to properly create scheules and store scores for games/tournaments, which implemented the Round-Robin Scheduling Algorithm. The system involved all aspects of the process, including the entry of teams, scheduling, scoring, time management, and UI. </p>
+        </div>
+              
+        <script src = "js/jquery.js"></script>
+        <script src = "js/index.js"></script>
+    </body>
+    
+</html>
