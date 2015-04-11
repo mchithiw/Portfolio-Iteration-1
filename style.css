@@ -133,9 +133,14 @@ a:hover{
 }
 
 .description{
+<<<<<<< HEAD
     top: 40%;
 }
 
+=======
+    top: 40%;	
+}
+>>>>>>> origin/master
 .about, .portfolio, .res{
     height: 55%;
     top: 40%;
@@ -312,6 +317,8 @@ a:hover{
 }
 
 .about{
+    width: 60%;
+    left: 20%;
     font-size: 17px;
     line-height: 1.5
 }
@@ -351,12 +358,21 @@ a:hover{
     height: 50px;
     background-color: #284676;
     color: white;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
     margin-right: 2vw;
     cursor: pointer;
     -moz-border-radius: 5px;
+<<<<<<< HEAD
   -webkit-border-radius: 5px;
     border: none;
+=======
+    -webkit-border-radius: 5px;
+    border: none;
+}
+
+.but:hover, .but-l:hover{
+    border: 3px solid white;
+>>>>>>> origin/master
 }
 
 .but:hover, .but-l:hover{
@@ -541,8 +557,13 @@ a:hover{
     }
     
     .about{
+<<<<<<< HEAD
         width: 90%;
         left: 5%;
+=======
+    	width: 90%;
+    	left: 5%;
+>>>>>>> origin/master
         font-size: 16px;
     }
     
