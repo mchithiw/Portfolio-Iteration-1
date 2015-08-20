@@ -522,6 +522,32 @@ a:hover{
     color: #284676;
 }
 
+.res-but{
+    margin-top: 20px;
+    color: white;
+    background-color: #284676;
+    color: white;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.res-but:hover{
+    background-color: #75a1e8;
+}
+
+.no-style-link{
+    color: white;
+    border: none;
+}
+
+.no-style-link:hover{
+    border-bottom: none;
+}
+
 @media (max-width: 800px) {
     
     .header{
